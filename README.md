@@ -1,3 +1,53 @@
+## Objetivo
+
+● Implementar um web app que consuma a SWAPI The Star Wars API utilizando
+Angular/ React.
+● A aplicação deve possuir 2 páginas:
+
+## ○ Página com lista somente dos planetas:
+
+■ Nome do planeta
+■ Terreno
+■ Diametro
+■ Clima
+■ Filmes em que aparece, com:
+
+## ○ Páginas de detalhes do planeta
+
+■ Nome do planeta
+■ Periodo de rotação
+■ Periodo de orbitação
+■ Diametro
+■ Clima
+■ Gravidade
+■ Terreno
+■ População
+■ Lista de nativos com:
+■ Nome
+■ Cor do cabelo
+■ Cor dos olhos
+■ Gênero
+■ Espécie(s), contendo:
+○ Nome
+■ Veículo(s), contendo:
+○ Nome
+○ Modelo
+
+## Requisitos específicos
+
+● A aplicação deverá ser responsiva, mobile-first
+● A aplicação deverá utilizar a funcionalidade de rotas
+● A lista de planetas deverá estar ordenada por nome, exibir 10 itens e ter paginação
+● A aplicação deve conter a funcionalidade de busca por nome
+● Não poderá ser utilizados pacotes terceiros feitos para o Swapi
+
+## Extras
+
+● Possuir testes E2E
+● Possuir testes unitários
+● Utilizar SASS(variáveis, mixins, etc)
+● Utilizar programação funcional
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
