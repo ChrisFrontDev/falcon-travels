@@ -6,11 +6,11 @@ Angular/ React.
 
 ## ○ Página com lista somente dos planetas:
 
-■ Nome do planeta
-■ Terreno
-■ Diametro
-■ Clima
-■ Filmes em que aparece, com:
+■ Nome do planeta X
+■ Terreno X
+■ Diametro X
+■ Clima X
+■ Filmes em que aparece, com: X
 
 ## ○ Páginas de detalhes do planeta
 
