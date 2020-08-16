@@ -42,3 +42,51 @@ export const getAllPlanets = async (page = 1) => {
 
   return data;
 };
+
+export const getSinglePlanet = async id => {
+  const res = await fetch(`${API_URL}${id}/`);
+
+  const resPlanetJson = await res.json();
+
+  const planetResidents = await Promise.all(
+    resPlanetJson.residents.map(async residentUrl => {
+      const residentResponse = await fetch(residentUrl);
+
+      return residentResponse.json();
+    }),
+  );
+
+  const residents = await Promise.all(
+    await planetResidents.map(async planetResident => {
+      const planetResidentVehicles = await Promise.all(
+        planetResident.vehicles.map(async vehicleUrl => {
+          const vehicleResponse = await fetch(vehicleUrl);
+
+          return vehicleResponse.json();
+        }),
+      );
+
+      const planetResidentSpecies = await Promise.all(
+        planetResident.species.map(async specieUrl => {
+          const specieResponse = await fetch(specieUrl);
+
+          return specieResponse.json();
+        }),
+      );
+
+      const planetWithVehicles = {
+        id: uuidv4(),
+        ...planetResident,
+        vehicles: planetResidentVehicles,
+        species: planetResidentSpecies,
+      };
+
+      return planetWithVehicles;
+    }),
+  );
+
+  const planet = { ...resPlanetJson, residents };
+
+  console.log(planet);
+  return planet;
+};

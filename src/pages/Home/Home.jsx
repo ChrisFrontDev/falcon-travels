@@ -2,6 +2,9 @@ import React from 'react';
 import usePlanets from '../../hooks/usePlanets';
 import Loader from '../../components/Loader/Loader';
 
+// TODO :
+// ESTILIZAR E COLOCAR TODOS OS CAMPOS RESTANTES ( JA ESTA TRAZENDO DA API)
+
 const Home = () => {
   const { loading, planets, actualPage, setActualPage } = usePlanets();
 
