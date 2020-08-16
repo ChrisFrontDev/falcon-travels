@@ -10,6 +10,7 @@ export default function usePlanets() {
   useEffect(() => {
     let mounted = true;
     const fetchData = async () => {
+      setLoading(true);
       const response = await getAllPlanets(actualPage);
       if (mounted) {
         setPlanets(response);
