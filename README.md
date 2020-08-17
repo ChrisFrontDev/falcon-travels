@@ -6,32 +6,32 @@ Angular/ React.
 
 ## ○ Página com lista somente dos planetas:
 
-■ Nome do planeta X
-■ Terreno X
-■ Diametro X
-■ Clima X
-■ Filmes em que aparece, com: X
+■ Nome do planeta X <br />
+■ Terreno X <br />
+■ Diametro X <br />
+■ Clima X <br />
+■ Filmes em que aparece, com: X <br />
 
 ## ○ Páginas de detalhes do planeta
 
-■ Nome do planeta
-■ Periodo de rotação
-■ Periodo de orbitação
-■ Diametro
-■ Clima
-■ Gravidade
-■ Terreno
-■ População
-■ Lista de nativos com:
-■ Nome
-■ Cor do cabelo
-■ Cor dos olhos
-■ Gênero
-■ Espécie(s), contendo:
-○ Nome
-■ Veículo(s), contendo:
-○ Nome
-○ Modelo
+■ Nome do planeta <br />
+■ Periodo de rotação <br />
+■ Periodo de orbitação <br />
+■ Diametro <br />
+■ Clima <br />
+■ Gravidade <br />
+■ Terreno <br />
+■ População <br />
+■ Lista de nativos com: <br />
+■ Nome <br />
+■ Cor do cabelo <br />
+■ Cor dos olhos <br />
+■ Gênero<br />
+■ Espécie(s), contendo:<br />
+○ Nome<br />
+■ Veículo(s), contendo:<br />
+○ Nome<br />
+○ Modelo<br />
 
 ## Requisitos específicos
 
