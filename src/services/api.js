@@ -26,7 +26,12 @@ export const getAllPlanets = async (page = 1) => {
       );
 
       const planetWithFilms = {
-        id: uuidv4(),
+        id:
+          resJson.results
+            .map(function (e) {
+              return e.name;
+            })
+            .indexOf(planet.name) + 1,
         name: planet.name,
         terrain: planet.terrain,
         diameter: planet.diameter,
