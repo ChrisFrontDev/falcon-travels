@@ -6,9 +6,6 @@ import usePlanets from '../../hooks/usePlanets';
 import Loader from '../../components/Loader/Loader';
 import { Container, ListPlanet, PlanetCard, EpisodeTag } from './style';
 
-// TODO :
-// ESTILIZAR E COLOCAR TODOS OS CAMPOS RESTANTES ( JA ESTA TRAZENDO DA API)
-
 const Home = () => {
   const { loading, planets, actualPage, setActualPage } = usePlanets();
   const history = useHistory();
