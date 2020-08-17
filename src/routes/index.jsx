@@ -8,7 +8,7 @@ import PlanetDetails from '../pages/PlanetDetails/PlanetDetails';
 const Routes = () => (
   <Switch>
     <Route path="/" exact component={Home} />
-    <Route path="/planet/:id">
+    <Route path="/planets/:id">
       <PlanetDetails />
     </Route>
   </Switch>
